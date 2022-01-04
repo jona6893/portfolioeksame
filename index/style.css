@@ -47,7 +47,7 @@ header{
     font-size: var(--subheadlinesize);
 }
 
-.ommig{
+.ommig_btn{
     width: 100px;
     height: 50px;
     margin-top: 25px;
@@ -60,13 +60,15 @@ header{
     font-family: var(--menuoptions);
     font-size: var(--textsize);
     letter-spacing: 2px;
+    border: 2px solid var(--black);
+    transition: 0.2s;
 }
-.ommig a{
+.ommig_btn a{
     font-family: var(--menuoptions);
     font-size: var(--textsize);
     letter-spacing: 2px;
-     color: var(--white);
-     text-decoration: none;
+    color: var(--white);
+    text-decoration: none;
 }
 #splashimage figure{
     display: grid;
@@ -74,7 +76,7 @@ header{
     justify-content: center;
 
 }
-.projekter{
+.projekter_btn{
      width: 150px;
     height: 50px;
     margin-top: 25px;
@@ -87,12 +89,33 @@ header{
     font-family: var(--menuoptions);
     font-size: var(--textsize);
     letter-spacing: 2px;
+    border: 2px solid var(--white);
 }
 
-.projekter a{
+.projekter_btn a{
       font-family: var(--menuoptions);
     font-size: var(--textsize);
     letter-spacing: 2px;
     color: var(--black);
     text-decoration: none;
+    transition: 0.2s;
+}
+
+.projekter_btn:hover{
+    background-color: var(--black);
+    border: 2px solid var(--white);
+    transition: 1s;
+}
+
+.projekter_btn:hover > a{
+    color: var(--white);
+}
+.ommig_btn:hover{
+    background-color: var(--white);
+    border: 2px solid var(--black);
+ 
+}
+
+.ommig_btn:hover > a{
+    color: var(--black);
 }

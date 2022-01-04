@@ -30,7 +30,7 @@ img {
   --headlinesize: 2.5rem;
   --subheadlinesize: 2rem;
   --textsize: 1.5rem;
-  --menusize: 1rem;
+  --menusize: 1.5rem;
 }
 
 /* Fonts */
@@ -41,12 +41,10 @@ img {
 /** ----------- Desktop Version ----------- */
 
 @media (min-width: 801px) {
-  .menuIcon {
+  .menuIcon, .menuIcon2 {
     display: none;
   }
-  .menuIcon2 {
-    display: none;
-  }
+
 
   header {
     width: 100%;
@@ -62,7 +60,7 @@ img {
     text-align: left;
     padding-left: 10%;
     font-family: var(--headline);
-    font-size: var(--textsize);
+    font-size: var(--subheadlinesize);
     color: var(--headerleft);
   }
 
