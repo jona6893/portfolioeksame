@@ -122,23 +122,23 @@ opacity: 1;
 
 
 .tema1{
-    background-image: url(projekter/one.webp);
+    background-image: url(images/tema1.webp);
     background-position: 10%;
 }
 .tema2{
-    background-image: url(/projekter/images/tema_b.jpg);
+    background-image: url(images/tema2.jpg);
     background-position: 2%;
 }
 .tema3{
-    background-image: url(/projekter/images/tema_c.webp);
+    background-image: url(images/tema3.webp);
     background-position: 2%;
 }
 .tema4{
-    background-image: url(/projekter/images/tema_d.webp);
+    background-image: url(images/tema4.webp);
     background-position: 2%;
 }
 .tema5{
-    background-image: url(/projekter/images/tema_e.webp);
+    background-image: url(images/tema5.webp);
     background-position: 2%;
 }
 
