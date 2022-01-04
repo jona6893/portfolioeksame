@@ -1,0 +1,167 @@
+/** ----------- Global Rules ----------- */
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+
+:root {
+  /* colors */
+  --textcolor: #ff7d00;
+  --styleling: #15616d;
+  --background: #fff7eb;
+  --black: black;
+  --white: white;
+  /* Projekter farver*/
+  --tema1: #ff003f;
+  --tema2: #01f9c6;
+  --tema3: #fc74fd;
+  --tema4: #21fc0d;
+  --tema5: #ffcf00;
+  /* fonts */
+  --headline: "Sarabun", sans-serif;
+  --text: "Urbanist", sans-serif;
+  --menuoptions: "Bebas Neue", cursive;
+  /* fonts size */
+  --headlinesize: 2.5rem;
+  --subheadlinesize: 2rem;
+  --textsize: 1.5rem;
+  --menusize: 1rem;
+}
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@100;200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+/** ----------- Desktop Version ----------- */
+
+@media (min-width: 801px) {
+  .menuIcon {
+    display: none;
+  }
+  .menuIcon2 {
+    display: none;
+  }
+
+  header {
+    width: 100%;
+    height: 100px;
+    display: grid;
+    place-content: center;
+    gap: 10px;
+    background-color: var(--background);
+    grid-template-columns: 1fr 1fr;
+  }
+
+  header h1 {
+    text-align: left;
+    padding-left: 10%;
+    font-family: var(--headline);
+    font-size: var(--textsize);
+    color: var(--headerleft);
+  }
+
+  header a {
+    text-decoration: none;
+    color: var(--headerright);
+  }
+
+  header ul {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .slidermenu li {
+    list-style: none;
+    font-family: var(--menuoptions);
+    letter-spacing: 2px;
+    font-size: var(--menusize);
+  }
+
+  .slidermenu {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10%;
+    
+  }
+}
+
+/** ----------- Mobil Version ----------- */
+
+@media (max-width: 800px) {
+  header {
+    width: 100%;
+    height: 75px;
+    background-color: var(--background);
+  }
+
+  header a {
+    text-decoration: none;
+    color: var(--textcolor);
+    font-family: var(--menuoptions);
+  }
+
+  header h1 {
+    padding-left: 5%;
+    font-family: var(--headline);
+  }
+
+  .menuIcon, .menuIcon2  {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+/*   .menuIcon2 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  } */
+
+  .menuIcon img {
+    width: 60px;
+    padding-right: 5%;
+  }
+  .menuIcon2 img {
+    width: 60px;
+    padding-right: 5%;
+  }
+
+  .navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: 75px;
+  }
+
+  .slidermenu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--white);
+    top: 75px;
+    transform: translateX(0%);
+    transition: 0.5s;
+    z-index: 100;
+  }
+
+  .slidermenu li {
+    list-style: none;
+    font-size: 1.5rem;
+    padding-inline-start: 5%;
+    padding-top: 5%;
+  }
+
+  .hidded {
+    transform: translateX(100%);
+  }
+
+  .gone {
+    display: none;
+  }
+}
