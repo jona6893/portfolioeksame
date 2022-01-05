@@ -1,53 +1,62 @@
-#splashimage {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 0.75fr 0.5fr 1fr;
-  height: 100vh;
-  align-items: center;
-    justify-items: center;
-}
-
-.splash {
-  width: 100%;
-  height: 100%;
-  background-image: url(../index/images/splash.jpg);
-  background-size: cover;
-  background-position: 75%;
-  grid-column: 2;
-  grid-row: 1/6;
-}
-
-header{
+@media (min-width: 801px) {
+  /* header regeler for index */
+  header {
     background-color: var(--white) !important;
-    margin-bottom: -100px !important; 
+    margin-bottom: -100px !important;
     z-index: 2 !important;
-}
+  }
 
-.slidermenu{
+  .slidermenu {
     z-index: 2 !important;
     color: var(--white);
-}
+  }
 
-.menuIcon, .menuIcon2{
+  .menuIcon,
+  .menuIcon2 {
     z-index: 2 !important;
-}
+  }
 
-.OScontainer{
+  /* grid layout med knapper */
+
+  #splashimage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.75fr 0.5fr 1fr;
+    height: 100vh;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .splash {
+    width: 100%;
+    height: 100%;
+    background-image: url(../index/images/splash.jpg);
+    background-size: cover;
+    background-position: 75%;
+    grid-column: 2;
+    grid-row: 1/6;
+  }
+
+  .OScontainer {
     text-align: center;
     grid-row: 2;
-}
+  }
 
-.OScontainer h1{
+  .OScontainer h1 {
     font-family: var(--headline);
     font-size: var(--headlinesize);
-}
+  }
 
-.OScontainer h3{
+  .OScontainer h3 {
     font-family: var(--headline);
     font-size: var(--subheadlinesize);
-}
-
-.ommig_btn{
+  }
+#splashimage figure {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  .ommig_btn {
     width: 100px;
     height: 50px;
     margin-top: 25px;
@@ -62,22 +71,17 @@ header{
     letter-spacing: 2px;
     border: 2px solid var(--black);
     transition: 0.2s;
-}
-.ommig_btn a{
+  }
+  .ommig_btn a {
     font-family: var(--menuoptions);
     font-size: var(--textsize);
     letter-spacing: 2px;
     color: var(--white);
     text-decoration: none;
-}
-#splashimage figure{
-    display: grid;
-    align-items: center;
-    justify-content: center;
-
-}
-.projekter_btn{
-     width: 150px;
+  }
+  
+  .projekter_btn {
+    width: 150px;
     height: 50px;
     margin-top: 25px;
     border: none;
@@ -90,32 +94,171 @@ header{
     font-size: var(--textsize);
     letter-spacing: 2px;
     border: 2px solid var(--white);
-}
+  }
 
-.projekter_btn a{
-      font-family: var(--menuoptions);
+  .projekter_btn a {
+    font-family: var(--menuoptions);
     font-size: var(--textsize);
     letter-spacing: 2px;
     color: var(--black);
     text-decoration: none;
     transition: 0.2s;
-}
+  }
 
-.projekter_btn:hover{
+  .projekter_btn:hover {
     background-color: var(--black);
     border: 2px solid var(--white);
     transition: 1s;
-}
+  }
 
-.projekter_btn:hover > a{
+  .projekter_btn:hover > a {
     color: var(--white);
-}
-.ommig_btn:hover{
+  }
+  .ommig_btn:hover {
     background-color: var(--white);
     border: 2px solid var(--black);
- 
+  }
+
+  .ommig_btn:hover > a {
+    color: var(--black);
+  }
 }
 
-.ommig_btn:hover > a{
+/** ----------- Mobil version ----------- */
+
+@media (max-width: 800px) {
+
+  /* header regeler for index */
+  header {
+    background-color: var(--white) !important;
+    z-index: 2 !important;
+  }
+  header h1{
+      color: var(--black);
+  }
+
+  .slidermenu {
+    z-index: 2 !important;
+  }
+  .slidermenu a{
     color: var(--black);
+  }
+
+  .menuIcon, .menuIcon2 {
+    z-index: 2 !important;
+  }
+
+/* Grid layout */
+
+  #splashimage {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../index/images/splash.jpg);
+    background-size: cover;
+    background-position: 50%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    grid-template-rows: 0.2fr 0.3fr 0.1fr 0.1fr 0.2fr;
+  }
+
+  .OScontainer {
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    grid-column: 2;
+    grid-row: 2/5;
+    text-align: center;
+  }
+
+  .OScontainer h1 {
+    font-family: var(--headline);
+    font-size: var(--headlinesize);
+    margin-top: 30px;
+    padding-inline: 2%;
+  }
+
+  .OScontainer h3 {
+    font-family: var(--headline);
+    font-size: var(--subheadlinesize);
+    margin-top: 30px;
+    padding-inline: 2%;
+  }
+
+  #splashimage figure{
+      display: none;
+  }
+
+  /* Knapper */
+   .ommig_btn {
+    width: 100px;
+    height: 50px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--black);
+    color: var(--white);
+    font-family: var(--menuoptions);
+    font-size: var(--textsize);
+    letter-spacing: 2px;
+    border: 2px solid var(--black);
+    transition: 0.2s;
+    grid-area: 3/2;
+  }
+  .ommig_btn a {
+    font-family: var(--menuoptions);
+    font-size: var(--textsize);
+    letter-spacing: 2px;
+    color: var(--white);
+    text-decoration: none;
+  }
+  
+  .projekter_btn {
+    width: 150px;
+    height: 50px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--black);
+    color: var(--white);
+    font-family: var(--menuoptions);
+    font-size: var(--textsize);
+    letter-spacing: 2px;
+    border: 2px solid var(--black);
+    grid-area: 4/2;
+    transition: 0.2s;
+  }
+
+  .projekter_btn a {
+    font-family: var(--menuoptions);
+    font-size: var(--textsize);
+    letter-spacing: 2px;
+    color: var(--white);
+    text-decoration: none;
+    
+  }
+
+  .projekter_btn:hover {
+    background-color: var(--white);
+    border: 2px solid var(--black);
+  }
+
+  .projekter_btn:hover > a {
+    color: var(--black);
+  }
+  .ommig_btn:hover {
+    background-color: var(--white);
+    border: 2px solid var(--black);
+  }
+
+  .ommig_btn:hover > a {
+    color: var(--black);
+  }
+
+
+
+
+
 }
