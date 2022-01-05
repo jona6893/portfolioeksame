@@ -25,18 +25,27 @@ img {
   /* fonts */
   --headline: "Sarabun", sans-serif;
   --text: "Urbanist", sans-serif;
-  --menuoptions: "Bebas Neue", cursive;
+  --menuoptions: "BN", cursive;
   /* fonts size */
   --headlinesize: 2.5rem;
+  --headlinesize2: 3rem;
   --subheadlinesize: 2rem;
   --textsize: 1.5rem;
+  --textsize2: 1rem;
   --menusize: 1.5rem;
 }
 
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@100;200;300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@font-face {
+    font-family: 'BN';
+    src: url('../fonts/bebasneue-regular-webfont.woff2') format('woff2'),
+         url('../fonts/bebasneue-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 /** ----------- Desktop Version ----------- */
 
@@ -142,7 +151,7 @@ img {
     width: 100%;
     height: 100vh;
     background-color: var(--white);
-    top: 75px;
+    top: 74px;
     transform: translateX(0%);
     transition: 0.5s;
     z-index: 100;
@@ -153,6 +162,7 @@ img {
     font-size: 1.5rem;
     padding-inline-start: 5%;
     padding-top: 5%;
+    text-align: center;
   }
 
   .hidded {
