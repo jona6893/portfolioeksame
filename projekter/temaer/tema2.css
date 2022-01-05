@@ -1,0 +1,91 @@
+/** Header regeler */
+
+header{
+    background-color: var(--headerright) !important;
+}
+
+header a{
+    color: var(--headerleft) !important;
+}
+a{
+    text-decoration: none;
+}
+
+@media (min-width: 801px){
+
+
+/* Section grid layout */
+
+#content{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+/*     grid-template-rows: 1fr 1fr 1fr 1fr; */
+    padding-inline: 3%;
+    padding-top: 5%;
+    column-gap: 30px;
+}
+
+/* Labels */
+
+#labelwrapper{
+    width: 100%;
+    display: grid;
+    height: fit-content;
+    gap: 20px;
+}
+
+
+#box{
+    position: sticky;
+    width: 100%;
+    height: 75px;
+    background-color: var(--black);
+    display: grid;
+
+}
+
+#box2{
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    background-color: var(--black);
+    color: var(--white);
+    display: grid;
+    align-items: center;
+    font-family: var(--menuoptions);
+    font-size: var(--textsize);
+    padding: 5%;
+    justify-content: center;
+
+}
+
+
+#box:hover > #box2{
+    margin-top: 5px;
+    margin-left: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+/* Favicon Indhold */
+
+#contentwrapper1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#contentwrapper2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+
+
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="260" height="260" viewBox="0 0 260 260">
+  <defs>
+    <clipPath id="clip-Favi_Icon">
+      <rect width="260" height="260"/>
+    </clipPath>
+  </defs>
+  <g id="Favi_Icon" data-name="Favi Icon" clip-path="url(#clip-Favi_Icon)">
+    <rect width="260" height="260" fill="#fff"/>
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="260" height="260" fill="#031716"/>
+    <text id="H" transform="translate(2 207)" fill="#fff" font-size="213" font-family="Rye-Regular, Rye"><tspan x="0" y="0">H</tspan></text>
+    <text id="B" transform="translate(91 208)" fill="#fff" font-size="216" font-family="Rye-Regular, Rye"><tspan x="0" y="0">B</tspan></text>
+  </g>
+</svg>

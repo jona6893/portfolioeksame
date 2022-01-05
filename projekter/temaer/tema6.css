@@ -1,0 +1,9 @@
+/** Header regeler */
+
+header{
+    background-color: var(--headerright) !important;
+}
+
+header a{
+    color: var(--headerleft) !important;
+}
