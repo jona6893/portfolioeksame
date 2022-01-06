@@ -27,12 +27,12 @@ img {
   --text: "Urbanist", sans-serif;
   --menuoptions: "BN", cursive;
   /* fonts size */
-  --headlinesize: 2.5rem;
-  --headlinesize2: 3rem;
-  --subheadlinesize: 2rem;
-  --textsize: 1.5rem;
-  --textsize2: 1rem;
-  --menusize: 1.5rem;
+  --headlinesize: clamp(1.5rem, 10vw, 3.5rem);
+  --headlinesize2: clamp(2rem, 10vw, 4rem);
+  --subheadlinesize: clamp(1rem, 10vw, 2rem);
+  --textsize: clam(0.75rem 10vw, 1.5rem);
+  --textsize2: clam(0.50rem 10vw, 1.rem);
+  --menusize: clam(1rem 10vw, 1.75rem);
 }
 
 /* Fonts */
@@ -47,7 +47,16 @@ img {
 
 }
 
-/** ----------- Desktop Version ----------- */
+/* Når der bliver scrolled ved hjælpe af et link på den sammme side.*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
+/** ----------- Desktop Version Header ----------- */
 
 @media (min-width: 801px) {
   .menuIcon, .menuIcon2 {
@@ -97,9 +106,10 @@ img {
     padding-right: 10%;
     
   }
+
 }
 
-/** ----------- Mobil Version ----------- */
+/** ----------- Mobil Version Header ----------- */
 
 @media (max-width: 800px) {
   header {
@@ -174,5 +184,79 @@ img {
   .gone {
     display: none;
   }
+
 }
 
+
+/** ----------- Desktop&mobil Version Footer ----------- */
+
+ footer{
+   width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-height: 500px ;
+    min-height: 300px ;
+    align-items: center;
+    gap: 0.4rem;
+    align-self: start;
+    justify-items: center;
+    padding-inline: 1rem;
+  }
+
+  #icons{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25px, 50px));
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+
+  .links{
+   display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25px, 50px));
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .links a{
+    text-decoration: none;
+    font-family: var(--menuoptions);
+    letter-spacing: 2px;
+    color: black;
+  }
+
+.link1:hover > a{
+  text-decoration: underline;
+}
+.link2:hover > a{
+  text-decoration: underline;
+}
+.link3:hover > a{
+  text-decoration: underline;
+}
+.link4:hover > a{
+  text-decoration: underline;
+}
+.link5:hover > a{
+  text-decoration: underline;
+}
+
+  #info{
+     display: grid;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  #info h1{
+    font-family: var(--headline);
+    font-size: var(--subheadlinesize);
+  }
+
+  #info h3{
+    font-family: var(--headline);
+    font-size: var(--menusize);
+  }

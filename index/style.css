@@ -188,7 +188,7 @@
     display: grid;
     justify-items: center;
     grid-template-columns: 0.2fr 1fr 0.2fr;
-    grid-template-rows: 0.2fr 0.3fr 0.2fr 0.1fr 0.2fr;
+    grid-template-rows: 0.2fr 0.3fr 0.1fr 0.1fr 0.2fr;
   }
 
   .OScontainer {
@@ -230,6 +230,7 @@
     grid-template-rows: 1fr;
     justify-items: center;
     align-items: center;
+    align-self: start;
 
   }
 
@@ -241,6 +242,7 @@
     grid-template-rows: 1fr;
     justify-items: center;
     align-items: center;
+    align-self: start;
   }
 
   .btn1_bg{
@@ -299,28 +301,6 @@
     color: var(--black);
     text-decoration: none;
   }
-
- /*  .projekter_btn:hover {
-    background-color: var(--white);
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-    margin-top: 10px;
-    margin-left: 20px;
-  }
-
-  .projekter_btn:hover > a {
-    color: var(--black);
-  }
-  .ommig_btn:hover {
-    background-color: var(--white);
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-    margin-top: 10px;
-    margin-left: 20px;
-  }
-
-.ommig_btn:hover > a {
-    color: var(--black);
-  } */
-
 
 
 
