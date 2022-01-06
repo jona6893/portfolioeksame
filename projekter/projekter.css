@@ -149,19 +149,19 @@ opacity: 1;
 
 
 .container1:hover{
-    background-color: var(--tema1);
-}
-.container2:hover{
     background-color: var(--tema2);
 }
-.container3:hover{
+.container2:hover{
     background-color: var(--tema3);
 }
-.container4:hover{
+.container3:hover{
     background-color: var(--tema4);
 }
-.container5:hover{
+.container4:hover{
     background-color: var(--tema5);
+}
+.container5:hover{
+    background-color: var(--tema6);
 }
 
 

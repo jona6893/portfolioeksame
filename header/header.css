@@ -17,11 +17,11 @@ img {
   --black: black;
   --white: white;
   /* Projekter farver*/
-  --tema1: #ff003f;
-  --tema2: #01f9c6;
-  --tema3: #fc74fd;
-  --tema4: #21fc0d;
-  --tema5: #ffcf00;
+  --tema2: #ff003f;
+  --tema3: #01f9c6;
+  --tema4: #fc74fd;
+  --tema5: #21fc0d;
+  --tema6: #ffcf00;
   /* fonts */
   --headline: "Sarabun", sans-serif;
   --text: "Urbanist", sans-serif;
