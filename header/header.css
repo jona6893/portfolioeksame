@@ -22,6 +22,11 @@ img {
   --tema4: #fc74fd;
   --tema5: #21fc0d;
   --tema6: #ffcf00;
+  /* Om mig Labels farver*/
+  --photoshop: #27CDF2;
+  --premierepro: #EA77FF;
+  --illustrator: #F28705;
+  --css: #F28705;
   /* fonts */
   --headline: "Sarabun", sans-serif;
   --text: "Urbanist", sans-serif;
@@ -107,6 +112,12 @@ html {
     
   }
 
+.slidermenu li:hover > a {
+  text-decoration: underline;
+}
+
+
+
 }
 
 /** ----------- Mobil Version Header ----------- */
@@ -185,6 +196,10 @@ html {
     display: none;
   }
 
+  .slidermenu li:hover > a {
+  text-decoration: underline;
+}
+
 }
 
 
@@ -209,6 +224,7 @@ html {
     width: 100%;
     height: auto;
     justify-content: center;
+    gap: 10px;
   }
 
   .links{
@@ -223,6 +239,7 @@ html {
   .links a{
     text-decoration: none;
     font-family: var(--menuoptions);
+    font-size: var(--menusize);
     letter-spacing: 2px;
     color: black;
   }

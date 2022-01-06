@@ -98,18 +98,18 @@ opacity: 1;
 /** De invdividuele box og deres billeder/hover effects */
 
 .box:hover > .tema1{
-    background-position: 60%;
+    background-position: 50%;
     margin-left: 25%;
     margin-top: 50px;
 }
 
 .box:hover > .tema2{
-    background-position: 50%;
+    background-position: 89%;
     margin-left: 25%;
     margin-top: 50px;
 }
 .box:hover > .tema3{
-    background-position: 90%;
+    background-position: 55%;
     margin-left: 25%;
     margin-top: 50px;
 }
@@ -119,7 +119,7 @@ opacity: 1;
     margin-top: 50px;
 }
 .box:hover > .tema5{
-    background-position: 80%;
+    background-position: 100%;
     margin-left: 25%;
     margin-top: 50px;
 }
@@ -128,7 +128,7 @@ opacity: 1;
 
 .tema1{
     background-image: url(images/tema2.jpg);
-    background-position: 10%;
+    background-position: 3%;
 }
 .tema2{
     background-image: url(images/tema3.webp);

@@ -110,27 +110,25 @@ header a{
     text-align: center;
 }
 
-/* .label1{
-    grid-area: 1/2;
+.label1{
+    background-color: var(--photoshop);
 }
 .label2{
-    grid-area: 1/3;
+    background-color: var(--premierepro);
 }
 .label3{
-    grid-area: 2/2;
+    background-color: var(--illustrator);
 }
 .label4{
-    grid-area: 2/3;
+    background: linear-gradient(110deg, var(--photoshop) 50%, var(--illustrator) 50%);
 }
 .label5{
-    grid-row: 3;
-    grid-column: 2/4;
-} */
+    background-color: var(--tema6);
+}
 
 #box{
     width: 120%;
     height: 100%;
-    background-color: var(--black);
     display: grid;
     
 }
@@ -255,27 +253,25 @@ header a{
     order: 4;
 }
 
-/* .label1{
-    grid-area: 1/2;
+.label1{
+    background-color: var(--photoshop);
 }
 .label2{
-    grid-area: 1/3;
+    background-color: var(--premierepro);
 }
 .label3{
-    grid-area: 2/2;
+    background-color: var(--illustrator);
 }
 .label4{
-    grid-area: 2/3;
+    background: linear-gradient(110deg, var(--photoshop) 50%, var(--illustrator) 50%);
 }
 .label5{
-    grid-row: 3;
-    grid-column: 1/3;
-} */
+    background-color: var(--tema6);
+}
 
 #box{
 /*     width: 120%; */
     height: 120%;
-    background-color: var(--black);
     display: grid;
     
 }

@@ -61,7 +61,7 @@ padding-top: 1.5rem;
     display: grid;
     align-items: center;
     font-family: var(--menuoptions);
-    font-size: var(--textsize);
+    font-size: var(--subheadlinesize);
     padding: 5%;
     justify-content: center;
     

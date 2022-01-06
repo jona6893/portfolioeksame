@@ -16,6 +16,10 @@
     z-index: 2 !important;
   }
 
+  #splashimage2{
+  display: none;
+}
+
   /* grid layout med knapper */
 
   #splashimage {
@@ -151,6 +155,8 @@
 .ommig_btn:hover > a {
     color: var(--black);
   }
+
+
 }
 
 /** ----------- Mobil version ----------- */
@@ -177,9 +183,13 @@
     z-index: 2 !important;
   }
 
+ #splashimage{
+   display: none;
+ } 
+
 /* Grid layout */
 
-  #splashimage {
+  #splashimage2 {
     width: 100%;
     height: 100vh;
     background-image: url(../index/images/splash.jpg);
@@ -187,18 +197,22 @@
     background-position: 50%;
     display: grid;
     justify-items: center;
-    grid-template-columns: 0.2fr 1fr 0.2fr;
-    grid-template-rows: 0.2fr 0.3fr 0.1fr 0.1fr 0.2fr;
+    grid-template-columns: 1fr;
   }
 
-  .OScontainer {
-    width: 100%;
-    height: 100%;
+.mobilhvid_bg{
+  margin-top: 10%;
+  width: 80%;
+    height: 80%;
     background-color: var(--white);
-    grid-column: 2;
-    grid-row: 2/5;
     text-align: center;
     padding: 10%;
+    display: grid;
+    column-gap: 5%;
+}
+
+  .OScontainer {
+    text-align: center;
   }
 
   .OScontainer h1 {
@@ -216,7 +230,7 @@
 
   }
 
-  #splashimage figure{
+  #splashimage2 figure{
       display: none;
   }
 
@@ -224,7 +238,6 @@
 
   #btn1{
     width: 100%;
-    grid-area: 3/2;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -236,7 +249,6 @@
 
   #btn2{
     width: 100%;
-    grid-area: 4/2;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
