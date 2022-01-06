@@ -91,7 +91,7 @@ a{
 /* Text Font & størrelse */
 
 .font h3{
-    font-size: var(--textsize);
+    font-size: var(--headlinesize);
     font-family: var(--headline);
 }
 .font p{
@@ -108,12 +108,19 @@ a{
     grid-row: 1;
     padding-top: 20px;
     column-gap: 1rem;
+    align-items: center;
+    justify-items: center;
+}
+
+#contentwrapper1 figure{
+    width: clamp(50%, 25vw, 80%);
 }
 
 #textwrapper1{
     display: grid;
     row-gap: 1rem;
-    height: fit-content;
+
+    line-height: 1.5;
 }
 
 /* Moodboard */ 
@@ -129,7 +136,7 @@ a{
 #textwrapper2{
     display: grid;
     row-gap: 1rem;
-    height: fit-content;
+    line-height: 1.5;
 }
 
 /* photoshop */
@@ -137,15 +144,16 @@ a{
 #contentwrapper3{
     display: grid;
     grid-template-columns: 1fr 1fr;
-
     grid-column: 2;
     grid-row: 3;
+    align-items: center;
 }
 
 #textwrapper3{
     display: grid;
     row-gap: 1rem;
     height: fit-content;
+    line-height: 1.5;
 }
 
 
@@ -163,6 +171,7 @@ a{
     display: grid;
     row-gap: 1rem;
     height: fit-content;
+    line-height: 1.5;
 }
 
 
@@ -177,14 +186,27 @@ a{
     display: none;
 }
 
-#temaindhold2{
+#content{
     display: none;
 }
 
-#temaindhold{
+#temaindhold2{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 60px;
+    gap: 4rem;
+    padding-inline: 2%;
+}
+
+/* Text Font & størrelse */
+
+.font h3{
+    font-size: var(--subheadlinesize);
+    font-family: var(--headline);
+}
+.font p{
+    font-size: var(--textsize2);
+    font-family: var(--text);
+    line-height: 1.5;
 }
 
 /* Favicon Indhold */
@@ -193,15 +215,38 @@ a{
     display: grid;
     grid-template-columns: 1fr;
     padding-top: 20px;
+    gap: 1rem;
 }
 
+#contentwrapper1 h3{
+    order: 1;
+}
+
+#contentwrapper1 figure{
+    order: 3;
+}
+
+#contentwrapper1 p{
+    order: 2;
+}
 
 /* Moodboard */ 
 
 #contentwrapper2{
     display: grid;
     grid-template-columns: 1fr;
+     gap: 1rem;
+}
+#contentwrapper2 h3{
+    order: 1;
+}
 
+#contentwrapper2 figure{
+    order: 2;
+}
+
+#contentwrapper2 p{
+    order: 3;
 }
 
 
@@ -209,7 +254,20 @@ a{
 
 #contentwrapper3{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+     gap: 1rem;
+}
+
+#contentwrapper3 h3{
+    order: 2;
+}
+
+#contentwrapper3 figure{
+    order: 1;
+}
+
+#contentwrapper3 p{
+    order: 3;
 }
 
 /* Splash Image */
@@ -217,8 +275,20 @@ a{
 #contentwrapper4{
     display: grid;
     grid-template-columns: 1fr;
+    gap: 1rem;
+    padding-bottom: 10%;
+}
+#contentwrapper4 h3{
+    order: 1;
 }
 
+#contentwrapper4 figure{
+    order: 2;
+}
+
+#contentwrapper4 p{
+    order: 3;
+}
 
 
 }
