@@ -11,6 +11,38 @@ a{
     text-decoration: none;
 }
 
+
+
+:root {
+  --scroll: 0;
+  --scrollbar-height: 10px;
+}
+
+main:before {
+  content: '';
+  width: 100%;
+  height:var(--scrollbar-height);
+  position:fixed;
+  top:0;
+  left:0;
+  background:#cccccc00;
+  
+}
+
+main:after { 
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: var(--scrollbar-height);
+  width: var(--scroll);
+  background: #8D7ECA;
+}
+
+
+
+
+
 /* Desktop version */
 
 @media (min-width: 801px){
@@ -220,14 +252,16 @@ a{
 
 #contentwrapper1 h3{
     order: 1;
+    text-decoration: underline var(--tema2) solid;
+    text-underline-offset: 0.3em;
 }
 
 #contentwrapper1 figure{
-    order: 3;
+    order: 4;
 }
 
 #contentwrapper1 p{
-    order: 2;
+    order: 3;
 }
 
 /* Moodboard */ 
@@ -239,16 +273,17 @@ a{
 }
 #contentwrapper2 h3{
     order: 1;
+    text-decoration: underline var(--tema2) solid;
+    text-underline-offset: 0.3em;
 }
 
 #contentwrapper2 figure{
-    order: 2;
-}
-
-#contentwrapper2 p{
     order: 3;
 }
 
+#contentwrapper2 p{
+    order: 4;
+}
 
 /* photoshop */
 
@@ -259,16 +294,19 @@ a{
 }
 
 #contentwrapper3 h3{
-    order: 2;
+    order: 1;
+    text-decoration: underline var(--tema2) solid;
+    text-underline-offset: 0.3em;
 }
 
 #contentwrapper3 figure{
-    order: 1;
+    order: 2;
 }
 
 #contentwrapper3 p{
-    order: 3;
+    order: 4;
 }
+
 
 /* Splash Image */
 
@@ -280,14 +318,16 @@ a{
 }
 #contentwrapper4 h3{
     order: 1;
+    text-decoration: underline var(--tema2) solid;
+    text-underline-offset: 0.3em;
 }
 
 #contentwrapper4 figure{
-    order: 2;
+    order: 3;
 }
 
 #contentwrapper4 p{
-    order: 3;
+    order: 4;
 }
 
 
