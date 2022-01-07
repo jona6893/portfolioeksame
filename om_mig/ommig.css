@@ -88,7 +88,7 @@ header a{
 }
 
 #text2 h3{
-    font-size: var(--textsize);
+    font-size: var(--subheadlinesize);
     font-family: var(--headline);
 }
 
@@ -102,7 +102,7 @@ header a{
 #labels{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 100px));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
     justify-content: center;
  /*    justify-items: center;
     align-items: center; */
@@ -192,7 +192,7 @@ header a{
 }
 
 #text2 h3{
-    font-size: var(--textsize);
+    font-size: var(--subheadlinesize);
     font-family: var(--headline);
     padding-bottom: 2%;
 }

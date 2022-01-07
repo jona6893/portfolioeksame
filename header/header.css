@@ -32,12 +32,12 @@ img {
   --text: "Urbanist", sans-serif;
   --menuoptions: "BN", cursive;
   /* fonts size */
-  --headlinesize: clamp(1.5rem, 10vw, 3.5rem);
-  --headlinesize2: clamp(2rem, 10vw, 4rem);
-  --subheadlinesize: clamp(1rem, 10vw, 2rem);
-  --textsize: clamp(0.7rem, 10vw, 1.5rem);
-  --textsize2: clamp(0.5rem 10vw, 1rem);
-  --menusize: clamp(1rem 10vw, 1.7rem);
+  --headlinesize: clamp(1.5rem, 4vw, 3.5rem);
+  --headlinesize2: clamp(2rem, 5vw, 4rem);
+  --subheadlinesize: clamp(1.3rem, 3vw, 2rem);
+  --textsize: clamp(0.7rem, 2vw, 1.5rem);
+  --textsize2: clamp(0.5rem 2vw, 1rem);
+  --menusize: clamp(1rem 2vw, 1.7rem);
 }
 
 /* Fonts */
