@@ -116,6 +116,7 @@ html {
 
 .slidermenu li:hover > a {
   text-decoration: underline;
+  text-underline-offset: 0.3em;
 }
 
 
@@ -200,6 +201,7 @@ html {
 
   .slidermenu li:hover > a {
   text-decoration: underline;
+    text-underline-offset: 0.3em;
 }
 
 }
@@ -248,18 +250,23 @@ html {
 
 .link1:hover > a{
   text-decoration: underline;
+    text-underline-offset: 0.3em;
 }
 .link2:hover > a{
   text-decoration: underline;
+    text-underline-offset: 0.3em;
 }
 .link3:hover > a{
   text-decoration: underline;
+    text-underline-offset: 0.3em;
 }
 .link4:hover > a{
   text-decoration: underline;
+    text-underline-offset: 0.3em;
 }
 .link5:hover > a{
   text-decoration: underline;
+    text-underline-offset: 0.3em;
 }
 
   #info{

@@ -111,11 +111,13 @@
     transition: 0.2s;
     grid-column: 1;
     grid-row: 1;
+    color: var(--white);
     
   }
-  .ommig_btn a {
+  #btn1 a {
     color: var(--white);
     text-decoration: none;
+    grid-area: 1/1;
   }
   
   .projekter_btn {
@@ -133,9 +135,11 @@
     grid-row: 1;
   }
 
-  .projekter_btn a {
+  #btn2 a {
     color: var(--black);
     text-decoration: none;
+    grid-column: 1;
+    grid-row: 1;
   }
 
   .projekter_btn:hover {
@@ -153,9 +157,6 @@
     box-shadow: var(--shadow);
     margin-top: 10px;
     margin-left: 20px;
-  }
-
-.ommig_btn:hover > a {
     color: var(--black);
   }
 
@@ -316,6 +317,7 @@
   .projekter_btn a {
     color: var(--black);
     text-decoration: none;
+    
   }
 
 
