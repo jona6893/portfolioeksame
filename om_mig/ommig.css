@@ -59,7 +59,7 @@ header a{
     margin-left: 20px;
     aspect-ratio: 1/1;
     display: block;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    box-shadow: var(--shadow);
 }
 
 /* Text 1 */
@@ -139,7 +139,7 @@ header a{
     transition: 0.3s;
     margin-top: 5px;
     margin-left: 5px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    box-shadow: var(--shadow);
     background-color: var(--white);
     color: var(--black);
     display: grid;
@@ -234,7 +234,7 @@ header a{
     margin-left: 20px;
     aspect-ratio: 1/1;
     display: block;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    box-shadow: var(--shadow);
 }
 
 
@@ -281,7 +281,7 @@ header a{
     height: 120%;
     margin-top: 5px;
     margin-left: 5px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    box-shadow: var(--shadow);
     background-color: var(--white);
      color: var(--black);
     display: grid;
