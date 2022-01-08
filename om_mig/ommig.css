@@ -9,19 +9,29 @@ header a{
     color: var(--headerleft) !important;
 }
 
+.ommig {
+  --repeat: auto-fit;
+}
+@media (min-width: 801px) {
+  #ommig {
+    --repeat: 2;
+  }
+}
+
+
 /** Desktop Version */
 
-@media (min-width: 801px) {
 
 #ommig {
     padding-top: 5%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(var(--repeat, auto-fit), minmax(200px, 1fr));
     grid-template-rows: 1fr 0.7fr;
     padding-inline: 5%;
     align-items: center;
     column-gap: 60px;
     row-gap: 20px;
+    
 }
 
 /* Profil billede */
@@ -45,8 +55,8 @@ header a{
 }
 
 #ommig figure {
-    margin-top: 20px;
-    margin-left: 20px;
+/*     margin-top: 20px;
+    margin-left: 20px; */
     aspect-ratio: 1/1;
     width: 100%;
     height: auto;
@@ -93,7 +103,7 @@ header a{
 }
 
 #text2 p{
-    font-size: var(--textsize2);
+    font-size: var(--textsize);
     font-family: var(--text);
 }
 
@@ -106,8 +116,10 @@ header a{
     justify-content: center;
  /*    justify-items: center;
     align-items: center; */
-    gap: 35px;
+    column-gap: 50px;
+    row-gap: 25px;
     text-align: center;
+    justify-items: center;
 }
 
 .label1{
@@ -150,151 +162,3 @@ header a{
     justify-content: center;
 
 }
-
-
-
-
-}
-
-/** Mobil Version */
-
-@media (max-width: 800px) {
-
-#ommig{
-    display: grid;
-    gap: 30px;
-    padding-inline: 5%;
-    justify-items: center;
-    padding-top: 5%;
-}
-
-#text1{
-    order: 1;
-}
-#text1 h1{
-    font-size: var(--headlinesize2);
-    font-family: var(--headline);
-    padding-bottom: 2%;
-}
-
-#text1 p{
-    font-size: var(--textsize2);
-    font-family: var(--text);
-    line-height: 150%;
-}
-#text2{
-    order: 3;
-}
-#text2 p{
-    font-size: var(--textsize2);
-    line-height: 150%;
-    font-family: var(--text);
-}
-
-#text2 h3{
-    font-size: var(--subheadlinesize);
-    font-family: var(--headline);
-    padding-bottom: 2%;
-}
-
-
-/* Profil billede */
-
-#container{
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 100%;
-    height: 100%;
-    justify-items: center;
-    padding-right: 10%;
-    order: 2;
-}
-
-#figure2{
-    background-color: var(--black);
-}
-
-.profilbillede2{
-    background-color: var(--black);
-    opacity: 0;
-}
-
-#ommig figure {
-    margin-top: 20px;
-    margin-left: 20px;
-    aspect-ratio: 1/1;
-    width: 100%;
-    height: auto;
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.profilbillede{
-    margin-top: 20px;
-    margin-left: 20px;
-    aspect-ratio: 1/1;
-    display: block;
-    box-shadow: var(--shadow);
-}
-
-
-
-
-/* Labels */
-
-#labels{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 200px));
-    justify-content: center;
-    padding-bottom: 10%;
-    gap: 35px;
-    text-align: center;
-    order: 4;
-}
-
-.label1{
-    background-color: var(--photoshop);
-}
-.label2{
-    background-color: var(--premierepro);
-}
-.label3{
-    background-color: var(--illustrator);
-}
-.label4{
-    background: linear-gradient(110deg, var(--photoshop) 50%, var(--illustrator) 50%);
-}
-.label5{
-    background-color: var(--tema6);
-}
-
-#box{
-/*     width: 120%; */
-    height: 120%;
-    display: grid;
-    
-}
-
-#box2{
-/*     width: 100%; */
-    height: 120%;
-    margin-top: 5px;
-    margin-left: 5px;
-    box-shadow: var(--shadow);
-    background-color: var(--white);
-     color: var(--black);
-    display: grid;
-    align-items: center;
-    font-family: var(--menuoptions);
-    font-size: var(--textsize2);
-}
-
-
-
-
-
-
-}
-
-

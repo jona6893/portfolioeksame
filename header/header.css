@@ -35,11 +35,14 @@ img {
   --headlinesize: clamp(1.5rem, 4vw, 3.5rem);
   --headlinesize2: clamp(2rem, 5vw, 4rem);
   --subheadlinesize: clamp(1.3rem, 3vw, 2rem);
-  --textsize: clamp(0.7rem, 2vw, 1.5rem);
-  --textsize2: clamp(0.5rem 2vw, 1rem);
-  --menusize: clamp(1rem 2vw, 1.7rem);
+  --textsize: clamp(1rem, 2vw, 1.8rem);
+  --textsize2: clamp(0.5rem, 2vw, 1rem);
+  --menusize: clamp(1.1rem, 3vw, 1.5rem);
   /* Box shadow */
   --shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;/* rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset */
+  /* scrollbar indicator */
+  --scroll: 0;
+  --scrollbar-height: 5px;
 }
 
 /* Fonts */
@@ -69,7 +72,6 @@ html {
   .menuIcon, .menuIcon2 {
     display: none;
   }
-
 
   header {
     width: 100%;
@@ -126,6 +128,13 @@ html {
 /** ----------- Mobil Version Header ----------- */
 
 @media (max-width: 800px) {
+  /* tilføj klasse til body så man ikke kan scrolle påside når burger menu åbne */
+   .stopScroll{
+    margin: 0; 
+    height: 100%; 
+    overflow: hidden
+  }
+/* header størrelse, farve og fonts */
   header {
     width: 100%;
     height: 75px;
@@ -143,16 +152,20 @@ html {
     font-family: var(--headline);
   }
 
+.stop{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: var(--white) !important;
+  }
+
+  /* hamburger og kryds iconer */
+
   .menuIcon, .menuIcon2  {
     width: 100%;
     display: flex;
     justify-content: flex-end;
   }
-/*   .menuIcon2 {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-  } */
 
   .menuIcon img {
     width: 60px;
@@ -162,13 +175,15 @@ html {
     width: 60px;
     padding-right: 5%;
   }
-
+/* grid hvor hamburger og title er placeret */
   .navbar {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     height: 75px;
   }
+
+  /* hamburger menu der kommer til syne med links */
 
   .slidermenu {
     position: fixed;
@@ -189,25 +204,23 @@ html {
     text-align: center;
   }
 
+  .slidermenu li:hover > a {
+  text-decoration: underline;
+    text-underline-offset: 0.3em;
+}
+/* ".skjult" placere ".slidermenu" til højre unde af syne, ".gone" skjuler ".menuicon & .menuicon2" */
   .skjult {
-   
     transform: translateX(100%);
   }
-
 
   .gone {
     display: none;
   }
 
-  .slidermenu li:hover > a {
-  text-decoration: underline;
-    text-underline-offset: 0.3em;
-}
-
 }
 
 
-/** ----------- Desktop&mobil Version Footer ----------- */
+/** ----------- Desktop & mobil Version Footer ----------- */
 
  footer{
    width: 100%;
@@ -233,7 +246,7 @@ html {
 
   .links{
    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25px, 50px));
+    grid-template-columns: repeat(auto-fit, minmax(25px, 75px));
     width: 100%;
     height: auto;
     justify-content: center;

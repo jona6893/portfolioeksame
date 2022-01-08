@@ -13,11 +13,6 @@ a{
 
 /** Scrollbar indication */
 
-:root {
-  --scroll: 0;
-  --scrollbar-height: 10px;
-}
-
 main:before {
   content: '';
   width: 100%;
@@ -336,7 +331,7 @@ main:after {
     font-family: var(--headline);
 }
 .font p{
-    font-size: var(--textsize2);
+    font-size: var(--textsize);
     font-family: var(--text);
     line-height: 1.5;
 }
