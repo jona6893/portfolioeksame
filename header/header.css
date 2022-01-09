@@ -32,8 +32,8 @@ img {
   --text: "Urbanist", sans-serif;
   --menuoptions: "BN", cursive;
   /* fonts size */
-  --headlinesize: clamp(1.5rem, 4vw, 3.5rem);
-  --headlinesize2: clamp(2rem, 5vw, 4rem);
+  --headlinesize: clamp(2rem, 4vw, 3.5rem);
+  --headlinesize2: clamp(2.5rem, 5vw, 4.5rem);
   --subheadlinesize: clamp(1.3rem, 3vw, 2rem);
   --textsize: clamp(1rem, 2vw, 1.8rem);
   --textsize2: clamp(0.5rem, 2vw, 1rem);

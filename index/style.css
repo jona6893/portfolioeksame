@@ -196,7 +196,7 @@
   #splashimage2 {
     width: 100%;
     height: 100vh;
-    background-image: url(../index/images/isommetric_laptop.webp);
+    background-image: url(images/laptop2.png);
     background-size: cover;
     background-position: 50%;
     display: grid;
