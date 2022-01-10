@@ -37,7 +37,7 @@
     width: 100%;
     height: 100%;
     background-color: #4D4D4D;
-    background-image: url(images/laptop2.png);
+    background-image: url(images/laptop_bg.png);
     background-size:cover;
     background-position: 75%;
     grid-column: 2;
@@ -196,7 +196,8 @@
   #splashimage2 {
     width: 100%;
     height: 100vh;
-    background-image: url(images/laptop2.png);
+    background-color: #4D4D4D;
+    background-image: url(images/laptop_bg.png);
     background-size: cover;
     background-position: 50%;
     display: grid;
