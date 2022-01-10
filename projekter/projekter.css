@@ -165,8 +165,6 @@ opacity: 1;
 }
 
 
-
-
 @keyframes topbuttom {
     from {
         transform: translateY(50%);

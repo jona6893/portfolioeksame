@@ -37,7 +37,7 @@ img {
   --subheadlinesize: clamp(1.3rem, 3vw, 2rem);
   --textsize: clamp(1rem, 2vw, 1.8rem);
   --textsize2: clamp(0.5rem, 2vw, 1rem);
-  --menusize: clamp(1.1rem, 3vw, 1.5rem);
+  --menusize: clamp(1.1rem, 2vw, 1.5rem);
   /* Box shadow */
   --shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;/* rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset */
   /* scrollbar indicator */
@@ -298,4 +298,10 @@ html {
   #info h3{
     font-family: var(--headline);
     font-size: var(--menusize);
+  }
+  #info a{
+    font-family: var(--headline);
+    font-size: var(--menusize);
+    text-decoration: none;
+    color: var(--black);
   }

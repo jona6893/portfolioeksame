@@ -137,6 +137,10 @@ header a{
 .label5{
     background-color: var(--tema6);
 }
+.label6{
+    background-color: var(--premierepro);
+}
+
 
 #box{
     width: 120%;

@@ -13,15 +13,9 @@ a{
 
 /** Scrollbar indication */
 
-main:before {
-  content: '';
-  width: 100%;
-  height:var(--scrollbar-height);
-  position:fixed;
-  top:0;
-  left:0;
-  
-}
+/* Vi vælger :after på vores main da den ellers ville placere alt indholdet i main i toppen af side tak af være position: fixed;
+med :after kommer vores properties efter det indhold vi har i vores main, på den måde kommer det ikke til at have en effekt på main indholdet.
+*/
 
 main:after { 
   content: '';
@@ -114,7 +108,7 @@ main:after {
 /** Text Font & størrelse */
 
 .font h3{
-    font-size: var(--headlinesize);
+    font-size: var(--subheadlinesize);
     font-family: var(--headline);
 }
 .font p{
