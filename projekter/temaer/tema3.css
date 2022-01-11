@@ -142,10 +142,11 @@ main:after {
 
 .imgcontainer1{
     display: grid;
-    grid-template-columns: 0.05fr 1fr 0.05fr;
+    grid-template-columns: 0.025fr 1fr 0.05fr;
     grid-template-rows: 0.04fr 1fr 0.07fr;
     height: -moz-fit-content;
     height: fit-content;
+    
 }
 
 .imgbackgrund1{
@@ -232,8 +233,8 @@ main:after {
 .imgcontainer3{
     display: grid;
     grid-template-columns: 0.03fr 1fr 0.05fr;
-    grid-template-rows: 0.02fr 1fr 0.04fr;
-    width: 75%;
+    grid-template-rows: 0.05fr 1fr 0.04fr;
+    width: 100%;
     height: auto;
 }
 
@@ -354,7 +355,7 @@ main:after {
 .imgcontainer1{
     display: grid;
     grid-template-columns: 0.03fr 1fr 0.04fr;
-    grid-template-rows: 0.025fr 1fr 0.04fr;
+    grid-template-rows: 0.05fr 1fr 0.04fr;
     height: -moz-fit-content;
     height: fit-content;
 }
@@ -437,7 +438,7 @@ main:after {
 .imgcontainer3{
     display: grid;
     grid-template-columns: 0.03fr 1fr 0.04fr;
-    grid-template-rows: 0.02fr 1fr 0.05fr;
+    grid-template-rows: 0.05fr 1fr 0.05fr;
     height: -moz-fit-content;
     height: fit-content;
 }
