@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="da">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../header/header.css">
-    <link rel="stylesheet" href="tema4.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../header/header.css" />
+    <link rel="stylesheet" href="tema4.css" />
     <title>Grundlæggende Animation</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
       <nav class="navbar">
         <a href="../../index.html"><h1>Tema 4</h1></a>
-        <div class="menuIcon"><img src="../../header/header_images/menu_black.svg" alt="hamburg menu" /></div>
+        <div class="menuIcon">
+          <img
+            src="../../header/header_images/menu_black.svg"
+            alt="hamburg menu"
+          />
+        </div>
         <div class="menuIcon2 gone">
-          <img src="../../header/header_images/close_black.svg" alt="close menu" />
+          <img
+            src="../../header/header_images/close_black.svg"
+            alt="close menu"
+          />
         </div>
       </nav>
       <ul class="slidermenu skjult">
@@ -28,69 +36,121 @@
       <!-- Desktop Sidebar -->
       <section id="content">
         <div id="labelwrapper">
-        <a href="#contentwrapper1"><div id="box" class="label1"><div id="box2"><h4>Design Elementer</h4></div></div></a>
-        <a href="#contentwrapper2"><div id="box" class="label2"><div id="box2"><h4>Spillet</h4></div></div></a>
-        <a href="#contentwrapper3"><div id="box" class="label3"><div id="box2"><h4>Javascript</h4></div></div></a>
+          <a href="#contentwrapper1"
+            ><div id="box" class="label1">
+              <div id="box2"><h4>Design Elementer</h4></div>
+            </div></a
+          >
+          <a href="#contentwrapper2"
+            ><div id="box" class="label2">
+              <div id="box2"><h4>Spillet</h4></div>
+            </div></a
+          >
+          <a href="#contentwrapper3"
+            ><div id="box" class="label3">
+              <div id="box2"><h4>Javascript</h4></div>
+            </div></a
+          >
         </div>
 
         <!-- Tema indhold Desktop -->
 
         <div id="temaindhold">
-
           <div id="contentwrapper1">
-          <div class="imgcontainer1"><div class="imgbackgrund1"></div><figure><img src="images/StartSaerm.webp" alt="Favicon"></figure></div>
-          <div id="textwrapper1" class="font">
-            <h3>Design Elementer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eos aliquid cupiditate fuga doloremque quis sed? Dicta, alias iste deserunt quae consequatur nisi a explicabo?</p>
+            <div class="imgcontainer1">
+              <div class="imgbackgrund1"></div>
+              <figure>
+                <img src="images/StartSaerm.webp" alt="Favicon" />
+              </figure>
+            </div>
+            <div id="textwrapper1" class="font">
+              <h3>Design Elementer</h3>
+              <p>
+                Elementerne i spillet er lavet i Adobe Illustrator og er alle
+                tegnet i Vector format, og er derfor ikke opbygget af pixels som
+                et normalt billede. Inden det endelig resultat, har vi skitseret
+                figurerne for at finde den ønskede still. Mit endte med at ligne
+                south park, hoved figuren det er baseret på mindre om en
+                karakter der fra.
+              </p>
+            </div>
           </div>
+
+          <div id="contentwrapper2">
+            <div id="textwrapper2" class="font">
+              <h3>CSS Animation</h3>
+              <p>
+                I spillet falder elementerne ned fra himmel og når de klikkes på forsvinder de, typisk med en animation som for dem til at rotere eller blive mindre. Dette opnås i CSS ved hjælpe a @Keyframes og properties “animation”. Med dem kan vi beslutte hvordan de falder, hvor hurtigt, hvor mange gang og timing-funktionen.
+              </p>
+            </div>
+            <div class="imgcontainer2">
+              <div class="imgbackgrund2"></div>
+              <figure><img src="images/spillet.webp" alt="Favicon" /></figure>
+            </div>
           </div>
 
-      <div id="contentwrapper2">
-        <div id="textwrapper2"  class="font">
-          <h3>Spillet</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eos aliquid cupiditate fuga doloremque quis sed? Dicta, alias iste deserunt quae consequatur nisi a explicabo?</p>
-        </div><div class="imgcontainer2"><div class="imgbackgrund2"></div><figure><img src="images/spillet.webp" alt="Favicon"></figure></div>
-      </div>
-
-      <div id="contentwrapper3">
-        <div id="textwrapper3" class="font">
-          <h3>Javascript</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eos aliquid cupiditate fuga doloremque quis sed? Dicta, alias iste deserunt quae consequatur nisi a explicabo?</p>
-       </div><div class="imgcontainer3"><div class="imgbackgrund3"></div><figure><img src="images/js.webp" alt="Favicon"></figure></div>
-      </div>
-
+          <div id="contentwrapper3">
+            <div id="textwrapper3" class="font">
+              <h3>Javascript</h3>
+              <p>
+                Javascript laders os manipulere med vores HTML DOM(html dokumentet, samt vores CSS file. I denne tog vi kun udgangs punkt i vores  HTML DOM. Ved hjælp af “functions” kan vi udfører en række beslutninger, vi kan starte vores “functions” gennem en Event Listener method, til at holde øje med når vi klikker på en at vores HTML Element i spillet.
+              </p>
+            </div>
+            <div class="imgcontainer3">
+              <div class="imgbackgrund3"></div>
+              <figure><img src="images/js.webp" alt="Favicon" /></figure>
+            </div>
+          </div>
         </div>
       </section>
 
-<!-- Team indhold Mobil -->
+      <!-- Team indhold Mobil -->
 
-      <section id="temaindhold2" class="font"> 
+      <section id="temaindhold2" class="font">
         <div id="contentwrapper1">
-          <div class="imgcontainer1"><div class="imgbackgrund1"></div><figure><img src="images/StartSaerm.webp" alt="Favicon"></figure></div>
-            <h3>Design Elementer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eos aliquid cupiditate fuga doloremque quis sed? Dicta, alias iste deserunt quae consequatur nisi a explicabo?</p>
+          <div class="imgcontainer1">
+            <div class="imgbackgrund1"></div>
+            <figure><img src="images/StartSaerm.webp" alt="Favicon" /></figure>
           </div>
+          <h3>Design Elementer</h3>
+          <p>
+            Elementerne i spillet er lavet i Adobe Illustrator og er alle tegnet
+            i Vector format, og er derfor ikke opbygget af pixels som et normalt
+            billede. Inden det endelig resultat, har vi skitseret figurerne for
+            at finde den ønskede still. Mit endte med at ligne south park, hoved
+            figuren det er baseret på mindre om en karakter der fra.
+          </p>
+        </div>
 
-      <div id="contentwrapper2">
-          <h3>Spillet</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eos aliquid cupiditate fuga doloremque quis sed? Dicta, alias iste deserunt quae consequatur nisi a explicabo?</p>
-          <div class="imgcontainer2"><div class="imgbackgrund2"></div><figure><img src="images/spillet.webp" alt="Favicon"></figure></div>
-      </div>
+        <div id="contentwrapper2">
+          <h3>CSS Animation</h3>
+          <p>
+            I spillet falder elementerne ned fra himmel og når de klikkes på forsvinder de, typisk med en animation som for dem til at rotere eller blive mindre. Dette opnås i CSS ved hjælpe a @Keyframes og properties “animation”. Med dem kan vi beslutte hvordan de falder, hvor hurtigt, hvor mange gang og timing-funktionen.
+          </p>
+          <div class="imgcontainer2">
+            <div class="imgbackgrund2"></div>
+            <figure><img src="images/spillet.webp" alt="Favicon" /></figure>
+          </div>
+        </div>
 
-      <div id="contentwrapper3">
+        <div id="contentwrapper3">
           <h3>Javascript</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eos aliquid cupiditate fuga doloremque quis sed? Dicta, alias iste deserunt quae consequatur nisi a explicabo?</p>
-          <div class="imgcontainer3"><div class="imgbackgrund3"></div><figure><img src="images/js.webp" alt="Favicon"></figure></div>
-      </div>
+          <p>
+            Javascript laders os manipulere med vores HTML DOM(html dokumentet, samt vores CSS file. I denne tog vi kun udgangs punkt i vores  HTML DOM. Ved hjælp af “functions” kan vi udfører en række beslutninger, vi kan starte vores “functions” gennem en Event Listener method, til at holde øje med når vi klikker på en at vores HTML Element i spillet.
+          </p>
+          <div class="imgcontainer3">
+            <div class="imgbackgrund3"></div>
+            <figure><img src="images/js.webp" alt="Favicon" /></figure>
+          </div>
+        </div>
       </section>
-
     </main>
 
     <footer>
       <div id="info">
         <h1>Portfolio Eksamen</h1>
         <h3>Jonathan Weldon</h3>
-        <a href = "mailto: jona6893@stud.kea.dk">Email</a>
+        <a href="mailto: jona6893@stud.kea.dk">Email</a>
       </div>
       <div class="links">
         <div class="link1"><a href="tema2.html">Tema 2</a></div>
@@ -98,18 +158,36 @@
         <div class="link3"><a href="#">Tema 4</a></div>
         <div class="link4"><a href="tema5.html">Tema 5</a></div>
         <div class="link5"><a href="tema6.html">Tema 6</a></div>
-    
       </div>
       <div id="icons">
-        <figure><img src="../../header/header_images/linkedin.svg" alt="Linkedin Icon"></figure>
-        <figure><img src="../../header/header_images/twitter.svg" alt="Twitter Icon"></figure>
-        <figure><img src="../../header/header_images/facebook.svg" alt="Facebook Icon"></figure>
-        <figure><img src="../../header/header_images/instagram.svg" alt="Instagram Icon"></figure>
+        <figure>
+          <img
+            src="../../header/header_images/linkedin.svg"
+            alt="Linkedin Icon"
+          />
+        </figure>
+        <figure>
+          <img
+            src="../../header/header_images/twitter.svg"
+            alt="Twitter Icon"
+          />
+        </figure>
+        <figure>
+          <img
+            src="../../header/header_images/facebook.svg"
+            alt="Facebook Icon"
+          />
+        </figure>
+        <figure>
+          <img
+            src="../../header/header_images/instagram.svg"
+            alt="Instagram Icon"
+          />
+        </figure>
       </div>
     </footer>
 
     <script src="../../header/header.js"></script>
     <script src="tema_scrollbar.js"></script>
-
-</body>
+  </body>
 </html>
