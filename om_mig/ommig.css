@@ -167,3 +167,12 @@ header a{
     justify-content: center;
 
 }
+
+.cv_title{
+    background-color: var(--black);
+}
+
+.cv_title a{
+    text-decoration: none;
+    color: var(--black);
+}
