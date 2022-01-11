@@ -145,6 +145,7 @@ main:after {
     grid-template-rows: 0.04fr 1fr 0.07fr;
     height: -moz-fit-content;
     height: fit-content;
+    width: 75%;
 }
 
 .imgbackgrund1{
