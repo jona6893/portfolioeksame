@@ -56,7 +56,7 @@ main:after {
 
 /** Boxes farver og hover */
 
-#box{
+.box{
     width: 100%;
     height: 75px;
     background-color: var(--black);
@@ -65,7 +65,7 @@ main:after {
 
 }
 
-#box2{
+.box2{
     width: 100%;
     height: 100%;
     transition: 0.3s;
@@ -81,11 +81,12 @@ main:after {
 
 }
 
-#box:hover{
+.box:hover{
     background-color: var(--tema5);
+    cursor: pointer;
 }
 
-#box:hover > #box2{
+.box:hover > .box2{
     margin-top: 5px;
     margin-left: 5px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
@@ -114,7 +115,7 @@ main:after {
 
 /** Pilot Video */
 
-#contentwrapper1{
+.contentwrapper1{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column: 2;
@@ -148,19 +149,19 @@ main:after {
     background-color: var(--tema5);
     grid-row: 1/3;
 }
-#contentwrapper1 video{
+.contentwrapper1 video{
     grid-column: 2/4;
     grid-row: 2/4;
 }
 
-#contentwrapper1 video{
+.contentwrapper1 video{
     box-shadow: var(--shadow);
     width: 100%;
 }
 
 /** Website Til Pilot Video */ 
 
-#contentwrapper2{
+.contentwrapper2{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column: 2;
@@ -192,19 +193,19 @@ main:after {
     background-color: var(--tema5);
     grid-row: 1/3;
 }
-#contentwrapper2 figure{
+.contentwrapper2 figure{
     grid-column: 2/4;
     grid-row: 2/4;
 }
 
 
-#contentwrapper2 img{
+.contentwrapper2 img{
     box-shadow: var(--shadow);
 }
 
 /** La Petanque */
 
-#contentwrapper3{
+.contentwrapper3{
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 1rem;
@@ -239,11 +240,11 @@ main:after {
     grid-row: 1/3;
 }
 
-#contentwrapper3 figure{
+.contentwrapper3 figure{
     grid-column: 2/4;
     grid-row: 2/4;
 }
-#contentwrapper3 img{
+.contentwrapper3 img{
     box-shadow: var(--shadow);
     height: 100%;
 }
@@ -251,7 +252,7 @@ main:after {
 
 /** Splash Image */
 
-#contentwrapper4{
+.contentwrapper4{
     min-height: 300px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -286,17 +287,17 @@ main:after {
     grid-row: 1/3;
 }
 
-#contentwrapper4 figure{
+.contentwrapper4 figure{
     grid-column: 2/4;
     grid-row: 2/4;
 }
-#contentwrapper4 img{
+.contentwrapper4 img{
     box-shadow: var(--shadow);
 }
 
 /** Video optagelse */
 
-#contentwrapper5{
+.contentwrapper5{
     min-height: 300px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -331,18 +332,18 @@ main:after {
     grid-row: 1/3;
 }
 
-#contentwrapper5 figure{
+.contentwrapper5 figure{
     grid-column: 2/4;
     grid-row: 2/4;
 }
-#contentwrapper5 img{
+.contentwrapper5 img{
     box-shadow: var(--shadow);
 }
 
 
 /** Video optagelse */
 
-#contentwrapper6{
+.contentwrapper6{
     min-height: 300px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -377,11 +378,11 @@ main:after {
     grid-row: 1/3;
 }
 
-#contentwrapper6 figure{
+.contentwrapper6 figure{
     grid-column: 2/4;
     grid-row: 2/4;
 }
-#contentwrapper6 img{
+.contentwrapper6 img{
     box-shadow: var(--shadow);
 }
 
@@ -421,18 +422,18 @@ main:after {
 
 /** Favicon Indhold */
 
-#contentwrapper1{
+.contentwrapper1{
     display: grid;
     grid-template-columns: 1fr;
     padding-top: 20px;
     gap: 1rem;
 }
 
-#contentwrapper1 h3{
+.contentwrapper1 h3{
     order: 1;
 }
 
-#contentwrapper1 p{
+.contentwrapper1 p{
     order: 3;
 }
 
@@ -451,30 +452,30 @@ main:after {
     background-color: var(--tema5);
     grid-row: 1/3;
 }
-#contentwrapper1 video{
+.contentwrapper1 video{
     grid-column: 2/4;
     grid-row: 2/4;
     order: 4;
     width: 100%;
 }
 
-#contentwrapper1 video{
+.contentwrapper1 video{
     box-shadow: var(--shadow);
     width: 100%;
 }
 
 /** Moodboard */ 
 
-#contentwrapper2{
+.contentwrapper2{
     display: grid;
     grid-template-columns: 1fr;
      gap: 1rem;
 }
-#contentwrapper2 h3{
+.contentwrapper2 h3{
     order: 1;
 }
 
-#contentwrapper2 p{
+.contentwrapper2 p{
     order: 4;
 }
 
@@ -493,31 +494,31 @@ main:after {
     background-color: var(--tema5);
     grid-row: 1/3;
 }
-#contentwrapper2 figure{
+.contentwrapper2 figure{
     grid-column: 2/4;
     grid-row: 2/4;
     order: 3;
 }
 
-#contentwrapper2 img{
+.contentwrapper2 img{
     box-shadow: var(--shadow);
 }
 
 
 /* photoshop */
 
-#contentwrapper3{
+.contentwrapper3{
     display: grid;
     grid-template-columns: 1fr;
      gap: 1rem;
 }
 
-#contentwrapper3 h3{
+.contentwrapper3 h3{
     order: 1;
 }
 
 
-#contentwrapper3 p{
+.contentwrapper3 p{
     order: 4;
 }
 
@@ -536,13 +537,13 @@ main:after {
     background-color: var(--tema5);
     grid-row: 1/3;
 }
-#contentwrapper3 figure{
+.contentwrapper3 figure{
     grid-column: 2/4;
     grid-row: 2/4;
     order: 2;
 }
 
-#contentwrapper3 img{
+.contentwrapper3 img{
     box-shadow: var(--shadow);
 }
 
@@ -550,17 +551,17 @@ main:after {
 
 /** Moodboard */
 
-#contentwrapper4{
+.contentwrapper4{
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
     padding-bottom: 10%;
 }
-#contentwrapper4 h3{
+.contentwrapper4 h3{
     order: 1;
 }
 
-#contentwrapper4 p{
+.contentwrapper4 p{
     order: 4;
 }
 
@@ -579,29 +580,29 @@ main:after {
     background-color: var(--tema5);
     grid-row: 1/3;
 }
-#contentwrapper4 figure{
+.contentwrapper4 figure{
     grid-column: 2/4;
     grid-row: 2/4;
     order: 3;
 }
 
-#contentwrapper4 img{
+.contentwrapper4 img{
     box-shadow: var(--shadow);
 }
 
 /** Video Optagelse */
 
-#contentwrapper5{
+.contentwrapper5{
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
     padding-bottom: 10%;
 }
-#contentwrapper5 h3{
+.contentwrapper5 h3{
     order: 1;
 }
 
-#contentwrapper5 p{
+.contentwrapper5 p{
     order: 4;
 }
 
@@ -620,30 +621,30 @@ main:after {
     background-color: var(--tema5);
     grid-row: 1/3;
 }
-#contentwrapper5 figure{
+.contentwrapper5 figure{
     grid-column: 2/4;
     grid-row: 2/4;
     order: 3;
 }
 
-#contentwrapper5 img{
+.contentwrapper5 img{
     box-shadow: var(--shadow);
 }
 
 
 /** Spørgeskema */
 
-#contentwrapper6{
+.contentwrapper6{
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
     padding-bottom: 10%;
 }
-#contentwrapper6 h3{
+.contentwrapper6 h3{
     order: 1;
 }
 
-#contentwrapper6 p{
+.contentwrapper6 p{
     order: 4;
 }
 
@@ -662,13 +663,13 @@ main:after {
     background-color: var(--tema5);
     grid-row: 1/3;
 }
-#contentwrapper6 figure{
+.contentwrapper6 figure{
     grid-column: 2/4;
     grid-row: 2/4;
     order: 3;
 }
 
-#contentwrapper6 img{
+.contentwrapper6 img{
     box-shadow: var(--shadow);
 }
 
