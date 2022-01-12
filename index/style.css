@@ -232,14 +232,14 @@
     margin-bottom: 2%
   }
 
-  .OScontainer h1 {
+  .OScontainer_m h1 {
     font-family: var(--headline);
     font-size: var(--headlinesize);
     margin-top: 30px;
     padding-inline: 2%;
   }
 
-  .OScontainer h3 {
+  .OScontainer_m h3 {
     font-family: var(--headline);
     font-size: var(--subheadlinesize);
     margin-top: 30px;
